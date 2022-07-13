@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // import fs, { readFile } from "fs";
 // The following lets you make use of promises instead of callback functions
 // Will need to make use of .then, including commented code for comparison

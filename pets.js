@@ -10,6 +10,7 @@ const subcommand = process.argv[2];
 console.log("subcommand: ", subcommand);
 
 switch (subcommand) {
+  // To Create:
   case "create": {
     const inputAge = parseInt(process.argv[3]);
     const inputKind = process.argv[4];
@@ -32,6 +33,7 @@ switch (subcommand) {
     break;
   }
 
+  // To Read:
   case "read": {
     const itemIndex = process.argv[3];
 
@@ -48,6 +50,7 @@ switch (subcommand) {
     break;
   }
 
+  // To Update:
   case "update": {
     const inputIndex = process.argv[3];
     const inputAge = parseInt(process.argv[4]);
@@ -75,6 +78,7 @@ switch (subcommand) {
     break;
   }
 
+  // To Destroy:
   case "destroy": {
     const inputIndex = process.argv[3];
     if (inputIndex === undefined) console.error("Error: Usage: node pets.js delete INDEX");
@@ -91,6 +95,7 @@ switch (subcommand) {
     break;
   }
 
+  // Default:
   default: {
     console.error(
       "Running error: Invalid command. Usage: node pets.js [ read [INDEX]| create [AGE KIND NAME] | update [INDEX AGE KIND NAME] | destroy [INDEX] ]"

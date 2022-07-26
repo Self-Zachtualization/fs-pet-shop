@@ -101,22 +101,3 @@ app.use((errISE, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`ez listenin' on station ${PORT}`);
 });
-
-// Error handler
-// THIS IS IN PROMISE SYNTAX
-// When in get function, use .catch, like
-
-// app.get("url", (req, res) => {
-//     const index = req.params.index;
-//     readFile("pets.json", "utf-8")
-//     .then((str) => {
-//         const pets = JSON.parse(str);
-//         res.send(pets[index]);
-//     })
-//     .catch(next);
-// })
-// app.use((err, req, res, next) => {
-//     if(err) {
-//         res.status(500);
-//     }
-// })
